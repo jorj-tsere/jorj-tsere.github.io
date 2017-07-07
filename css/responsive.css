@@ -1,0 +1,117 @@
+@media only screen and (max-width : 1200px)  {
+	.news-item-title {
+	    font-size: 18px !important;
+	}
+	#featureWrapper {
+	    justify-content: space-around !important;
+	    flex-wrap:wrap;
+	}	
+
+	.feature-item {
+	    width: 96% !important;
+	}
+}
+
+@media only screen and (max-width : 1080px)  {
+/* Styles */
+	.news-item-title {
+	    font-size: 16px !important;
+	}
+	#newsWrapper{
+		justify-content: space-between;
+		flex-wrap:wrap;
+	} 
+	.news-item {
+	    width: 48.5% !important;
+	}
+
+	#mainMenu {
+		display: none !important;	
+	}
+	
+	#socialMenu ul li:last-child{
+		display: inline-block !important;
+	}
+	.toggleMenuSocialIcon{
+		display: none !important;
+	}
+}
+
+
+@media only screen and (max-width : 700px)  {
+/* Styles */
+	#videosWrapper {
+	    justify-content: space-around !important;
+	    flex-wrap:wrap;
+	}
+	.yt_video {
+	    width: 96% !important;
+	    /*height: 320px;*/
+	    border: 3px solid transparent;
+	    margin-bottom:15px;
+	}
+	#newsWrapper{
+		justify-content: space-around !important;
+		flex-wrap:wrap;
+	} 
+	.news-item {
+	    width: 98% !important;
+	}
+
+	#featureWrapper {
+	    justify-content: space-around !important;
+	    flex-wrap:wrap;
+	}	
+
+	.feature-item {
+	    width: 96% !important;
+	}
+
+	.featureBox img {
+	    display: inline-block;
+	    /* height: 130px; */
+	    width: 22% !important;
+	    margin-left: 6%;
+	    margin-bottom:15px;
+	}
+	.featureBox img::after{
+	   content: "";
+	   display: block; 
+	   clear: both;	
+	}
+	.feature-desc::before{
+		content: "";
+	   display: block; 
+	   clear: both;
+	}
+	.feature-desc {
+	    display: block;
+	    width: 99% !important;
+	    float: left !important;
+	}
+	/***********/
+	#siteFooter{
+		padding:15px 0;
+	}
+	#siteFooter span{
+		width:100%;
+		text-align:center; 
+		line-height: 30px !important;
+	}
+	#socialMenu ul li:nth-child(1),
+	#socialMenu ul li:nth-child(2),
+	#socialMenu ul li:nth-child(3){
+		display: none !important;
+	}
+	#socialMenu ul li:nth-child(4):before{
+		content: "";
+	    display: inline-block;
+	    width: 2px;
+	    height: 24px;
+	    margin:4px 0px;	
+	    background: none;
+	}
+	.toggleMenuSocialIcon{
+		display: inline-block !important;
+	}
+}

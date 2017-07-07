@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>web project - homepage</title>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="./js/functions.js"></script>
+</head>
+<body>
+	<header id="mainHeader">
+		<div id="headerWrapper" class="container">
+<!-- logo -->
+			<div id="logo" class="left">
+				<img src="./icons/ico_logo_html.svg" alt="logo" >
+			</div>
+<!-- main menu -->
+			<nav id="mainMenu" class="left">
+				<ul>
+					<li><a href="#home">home</a></li>
+					<li><a href="#news">news</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#contcat">contcat</a></li>
+				</ul>
+			</nav>
+<!-- social menu -->
+			<nav id="socialMenu" class="right">
+				<ul>
+					<li>
+						<a href="#google_plus">
+							<img src="./icons/ico_google_plus.svg" alt="google plus">
+						</a>
+					</li>
+					<li>
+						<a href="#fb">
+							<img src="./icons/ico_fb.svg" alt="facebook">
+						</a>
+					</li>
+					<li>
+						<a href="#youtube">
+							<img src="./icons/ico_youtube.svg" alt="youtube" >
+						</a>
+					</li>
+					<li>
+						<a href="#search" onclick="toggleSearchBox()"> 
+							<img src="./icons/ico_search.svg" alt="search" >
+						</a>
+					</li>
+					<li>
+						<a id="toggleMenuButton" href="#menu" onclick="showToggleMenu()">
+							<img src="./icons/ico_menu.svg" alt="menu" >
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<nav id="toggleMenu">
+								<ul>
+									<li><a href="#home">home</a></li>
+									<li><a href="#news">news</a></li>
+									<li><a href="#about">about</a></li>
+									<li><a href="#contcat">contcat</a></li>
+									<li class="toggleMenuSocialIcon">
+										<a href="#google_plus">
+											<img src="./icons/ico_google_plus.svg" alt="google plus">
+										</a>
+									</li>
+									<li class="toggleMenuSocialIcon">
+										<a href="#fb">
+											<img src="./icons/ico_fb.svg" alt="facebook">
+										</a>
+									</li>
+									<li class="toggleMenuSocialIcon">
+										<a href="#youtube">
+											<img src="./icons/ico_youtube.svg" alt="youtube" >
+										</a>
+									</li>
+								</ul>
+							</nav>
+	</header>
+	<section id="content">
+		<!-- SLIDER SECTION -->
+		<section id="sliderSection">
+			<div id="bannerBox" class="container">
+				<!-- <img src="./images/banner.jpg" height="100%" alt="banner"> -->
+				<div id="bannerTextLeft">
+						things aren't always <br/>
+						#000000<br/>
+						or<br/>
+						#ffffff
+				</div>
+				<div id="bannerTextRight">
+					<img src="./icons/ico_logo_html2.svg" alt="logo" >
+				</div>
+				<span id="slider-prev-arrow" title="prev" class="slider-arrows"><img src="./icons/ico_arrow_prev.svg" alt="prev"></span>
+				<span id="slider-next-arrow" title="next" class="slider-arrows"><img src="./icons/ico_arrow_next.svg" alt="next"></span>
+			</div>
+		</section>
+		<!-- VIDEO SECTION -->
+		<section id="videoSection">
+			<div id="videoBox" class="container">
+				<h2 class="sectionTitle"><span class="sectionTitleTag">videos</span><a href="#viewAllVideos" class="sectionTitle-viewAll">  view all videos</a></h2>
+				<section id="videosWrapper">
+					<iframe src="https://www.youtube.com/embed/lyVfXmZ-hK8?ecver=2" class="yt_video"  frameborder="0" allowfullscreen>
+					</iframe>
+					<iframe src="https://www.youtube.com/embed/Pz29ToCtd1U?list=RDEMLysLhKs4pOU4jcNuqmTeRw?ecver=2" class="yt_video"  frameborder="0" allowfullscreen>
+					</iframe>
+				</section>
+			</div>
+		</section>
+		<!-- NEWS SECTION -->
+		<section id="newsSection">
+			<div id="newsBox" class="container">
+				<h2 class="sectionTitle">
+					<span class="sectionTitleTag">news</span>
+					<a href="#viewAllNews" class="sectionTitle-viewAll"> view all news</a>
+				</h2>
+				<section id="newsWrapper">
+					<article class="news-item">
+						<img src="./images/typography.jpg" alt="typography">
+						<h3 class="news-item-title">Typography Lab
+							<a href="#" class="news-item-read-more">read more</a>
+						</h3>
+
+					</article>
+					<article class="news-item">
+						<img src="./images/online_marketing.jpg" alt="online_marketing">
+						<h3 class="news-item-title">
+							Online Marketing
+							<a href="#" class="news-item-read-more">read more</a>
+						</h3>
+					</article>
+					<article class="news-item">
+						<img src="./images/coding.jpg" alt="coding">
+						<h3 class="news-item-title">
+							C# coding
+							<a href="#" class="news-item-read-more">read more</a>
+						</h3>
+					</article>
+					<article class="news-item">
+						<img src="./images/design.jpg" alt="design">
+						<h3 class="news-item-title">
+							Interface Design
+							<a href="#" class="news-item-read-more">read more</a>
+						</h3>
+					</article>
+				</section>
+			</div>
+		</section>
+		<!-- Featured SECTION -->
+		<section id="featureSection">
+			<div id="featureBox" class="container">
+				<h2 class="sectionTitle"><span class="sectionTitleTag">Featured</span><a href="#viewAllNews" class="sectionTitle-viewAll">view all featured media</a></h2>
+				<section id="featureWrapper">
+					<article class="feature-item">
+						<h3 class="feature-item-title">Responsive Web Design</h3>
+						<div class="featureBox">
+							<img src="./icons/ico_hand.svg" alt="hand" class="left" />
+							<span class="feature-desc">
+								approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.
+							</span>
+						</div>
+						<span class="readMore right">
+							<a href="#readMore-ResponsiveWebDesign">read more</a>
+						</span>
+					</article>
+					<article class="feature-item">
+						<h3 class="feature-item-title">App Development</h3>
+						<div class="featureBox">
+							<img src="./icons/ico_phone.svg" alt="phone" class="left"/>
+							<span class="feature-desc right">
+								Mobile application development is the process of making or creating a mobile application to run on various mobile platforms. A mobile platform is a mobile operating system.
+							</span>
+						</div>
+						<span class="readMore right">
+							<a href="#readMore-ResponsiveWebDesign">read more</a>
+						</span>
+					</article>
+				</section>
+			</div>
+		</section>
+	</section>
+	<footer id="siteFooter">
+		<div id="footerWrapper" class="container">
+			<span id="copyright" class="left">
+				&copy; hyper text murkup language
+			</span>
+			<span id="creator" class="right">
+				created by: <a href="#sitecreator" class="siteCreator">giorgi tsereteli</a>
+			</span>
+		</div>
+	</footer>
+	<div id="searchWrapper">
+		<div id="searchBoxCloseBtn" onclick="toggleSearchBox()" title="close"> 
+			<img src="./icons/ico_close_search.svg" class="right clear" alt="close search box" width="118" height="118">
+		</div>
+		<form method="post" action="/" id="searchForm">
+			<label>search by typing</label><br/>
+			<input type="text"  name="searchValue" placeholder="search here..." id="searchInput" autofocus="true">
+		</form>	
+	</div>
+</body>
+</html>
